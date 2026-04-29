@@ -661,15 +661,25 @@ img { max-width: 100%; display: block; }
 
   .hero { min-height: auto; }
   .hero-inner {
-    padding: 48px 24px 300px;
+    padding: 48px 24px 280px;
     text-align: center;
   }
   .hero-right { display: none; }
   .hero-robot {
-    width: 280px;
-    right: 50%;
-    transform: translateX(50%);
+    width: 260px;
+    right: 0;
+    left: auto;
+    transform: none;
     bottom: 0;
+  }
+  .hero-cube {
+    display: block;
+    width: 120px;
+    right: auto;
+    left: calc(50% - 60px);
+    bottom: 160px;
+    transform: none;
+    animation: floatCube 3s ease-in-out infinite;
   }
 
   .lamp-wrapper { height: 60px; }
