@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StockMind — Etkinlik Ekipman Yönetimi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/stockmind-logo.svg" alt="StockMind Logo" class="logo-img" />
+        <span class="logo-text">Stock <span class="gold" data-tr="Mind" data-en="Mind">Mind</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#sorun" data-tr="Sorun" data-en="Problem">Sorun</a></li>
+        <li><a href="#ozellikler" data-tr="Özellikler" data-en="Features">Özellikler</a></li>
+        <li><a href="#nasil-calisir" data-tr="Nasıl Çalışır" data-en="How It Works">Nasıl Çalışır</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="tr">🇹🇷 TR</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+        </div>
+        <a href="https://stock-mind-lyart.vercel.app/login" class="btn-gold" data-tr="Ücretsiz Dene" data-en="Try Free">Ücretsiz Dene</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#sorun" data-tr="Sorun" data-en="Problem">Sorun</a></li>
+        <li><a href="#ozellikler" data-tr="Özellikler" data-en="Features">Özellikler</a></li>
+        <li><a href="#nasil-calisir" data-tr="Nasıl Çalışır" data-en="How It Works">Nasıl Çalışır</a></li>
+        <li><a href="https://stock-mind-lyart.vercel.app/login" class="btn-gold mobile-cta" data-tr="Ücretsiz Dene" data-en="Try Free">Ücretsiz Dene</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1 data-tr="Kaos, kârınızı eritmesin." data-en="Don't let chaos eat your profits.">
+          Kaos, kârınızı eritmesin.
+        </h1>
+        <p class="hero-sub" data-tr="Etkinlik ekipmanlarınızı gerçek zamanlı takip edin. Hangi eşya nerede, kimde, ne durumda — tek ekranda." data-en="Track your event equipment in real time. Which item is where, with whom, in what condition — on a single screen.">
+          Etkinlik ekipmanlarınızı gerçek zamanlı takip edin. Hangi eşya nerede, kimde, ne durumda — tek ekranda.
+        </p>
+        <ul class="hero-bullets">
+          <li data-tr="Depolar arası anlık stok takibi" data-en="Real-time stock tracking across warehouses">Depolar arası anlık stok takibi</li>
+          <li data-tr="Etkinlik bazlı ekipman yönetimi" data-en="Event-based equipment management">Etkinlik bazlı ekipman yönetimi</li>
+        </ul>
+        <div class="hero-cta-group">
+          <a href="https://stock-mind-lyart.vercel.app/login" class="btn-gold btn-large" data-tr="Ücretsiz Başla →" data-en="Get Started Free →">Ücretsiz Başla →</a>
+          <span class="no-card" data-tr="Kredi kartı gerekmez" data-en="No credit card required">Kredi kartı gerekmez</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image-wrapper">
+          <img src="assets/Gemini_Generated_Image_52nxph52nxph52nx-removebg-preview.png" alt="Robot Arm" class="robot-arm hero-robot flipped" />
+          <img src="assets/Gemini_Generated_Image_7mxdit7mxdit7mxd-removebg-preview.png" alt="Cube" class="cube hero-cube" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-glow"></div>
+  </section>
+
+  <!-- SORUN BÖLÜMÜ -->
+  <section class="section sorun" id="sorun">
+    <div class="container">
+      <h2 class="section-title" data-tr="Her etkinlik sonrası kayıp eşya mı arıyorsunuz?" data-en="Do you search for missing items after every event?">
+        Her etkinlik sonrası kayıp eşya mı arıyorsunuz?
+      </h2>
+      <div class="cards-row">
+        <div class="problem-card">
+          <div class="problem-icon">📊</div>
+          <h3 data-tr="Excel'de takip kabus oldu" data-en="Tracking in Excel became a nightmare">Excel'de takip kabus oldu</h3>
+          <p data-tr="Satırlar, sütunlar, kopyalar — her etkinlikte dosya büyüyor ama netlik azalıyor." data-en="Rows, columns, copies — the file grows with every event but clarity shrinks.">Satırlar, sütunlar, kopyalar — her etkinlikte dosya büyüyor ama netlik azalıyor.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🤷</div>
+          <h3 data-tr="Kim ne götürdü, bilen yok" data-en="Nobody knows who took what">Kim ne götürdü, bilen yok</h3>
+          <p data-tr="Ekipman çıktı mı, iade edildi mi? Sözlü söz, kağıt not — hiçbiri güvenilir değil." data-en="Did the equipment leave? Was it returned? Verbal promises, paper notes — none of it reliable.">Ekipman çıktı mı, iade edildi mi? Sözlü söz, kağıt not — hiçbiri güvenilir değil.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">💸</div>
+          <h3 data-tr="Hasar fark edilmiyor, para gidiyor" data-en="Damage goes unnoticed, money walks out">Hasar fark edilmiyor, para gidiyor</h3>
+          <p data-tr="Kırılan, kaybolan, yıpranan ekipman faturaya yansımadan kayıp olarak kalıyor." data-en="Broken, lost, worn equipment stays a loss without ever hitting an invoice.">Kırılan, kaybolan, yıpranan ekipman faturaya yansımadan kayıp olarak kalıyor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖZELLİKLER (LAMBA EFEKTİ) -->
+  <section class="section ozellikler" id="ozellikler">
+    <div class="container">
+      <div class="lamp-wrapper">
+        <svg class="lamp-svg" viewBox="0 0 300 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="beamGrad" x1="0.5" y1="0" x2="0.5" y2="1">
+              <stop offset="0%"   stop-color="#E8A833" stop-opacity="0.72"/>
+              <stop offset="40%"  stop-color="#C8882A" stop-opacity="0.22"/>
+              <stop offset="100%" stop-color="#E8A833" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- Beam cone (below shade) -->
+          <path d="M126 130 L0 520 L300 520 L174 130 Z" fill="url(#beamGrad)"/>
+          <!-- Ceiling mount -->
+          <rect x="135" y="0" width="30" height="12" rx="4" fill="#252320"/>
+          <!-- Cord -->
+          <line x1="150" y1="12" x2="150" y2="62" stroke="#2a2820" stroke-width="3" stroke-linecap="round"/>
+          <!-- Shade outer -->
+          <path d="M88 62 L212 62 L186 124 L114 124 Z" fill="#1a1815"/>
+          <path d="M88 62 L212 62 L186 124 L114 124 Z" stroke="#2e2c26" stroke-width="1.5" fill="none"/>
+          <!-- Shade bottom glow line -->
+          <line x1="114" y1="124" x2="186" y2="124" stroke="#E8A833" stroke-width="1.5" opacity="0.55"/>
+          <!-- Shade inner -->
+          <path d="M100 67 L200 67 L178 119 L122 119 Z" fill="#22201c"/>
+          <!-- Bulb -->
+          <circle cx="150" cy="127" r="8"  fill="#E8A833"/>
+          <circle cx="150" cy="127" r="17" fill="#E8A833" opacity="0.28"/>
+          <circle cx="150" cy="127" r="28" fill="#E8A833" opacity="0.07"/>
+        </svg>
+      </div>
+
+      <h2 class="section-title" data-tr="Her şeyi tek yerden yönetin." data-en="Manage everything from one place.">Her şeyi tek yerden yönetin.</h2>
+
+      <div class="features-grid" id="featuresGrid">
+        <div class="feature-card" data-index="0">
+          <div class="feature-icon">🗺️</div>
+          <h3 data-tr="Dijital Depo Haritası" data-en="Digital Warehouse Map">Dijital Depo Haritası</h3>
+          <p data-tr="Hangi eşya hangi depoda, kaç tane kaldı — anlık görün." data-en="Which item is in which warehouse, how many left — see it instantly.">Hangi eşya hangi depoda, kaç tane kaldı — anlık görün.</p>
+        </div>
+        <div class="feature-card" data-index="1">
+          <div class="feature-icon">📅</div>
+          <h3 data-tr="Etkinlik Takibi" data-en="Event Tracking">Etkinlik Takibi</h3>
+          <p data-tr="Hangi etkinliğe ne çıktı, ne iade edildi — kayıt altında." data-en="What went to which event, what was returned — all on record.">Hangi etkinliğe ne çıktı, ne iade edildi — kayıt altında.</p>
+        </div>
+        <div class="feature-card" data-index="2">
+          <div class="feature-icon">🔧</div>
+          <h3 data-tr="Hasar & Tamir Takibi" data-en="Damage & Repair Tracking">Hasar &amp; Tamir Takibi</h3>
+          <p data-tr="Hasarlı eşyayı işaretle, tamire gönder, süreci takip et." data-en="Mark damaged items, send for repair, track the process.">Hasarlı eşyayı işaretle, tamire gönder, süreci takip et.</p>
+        </div>
+        <div class="feature-card" data-index="3">
+          <div class="feature-icon">👥</div>
+          <h3 data-tr="Ekip Yönetimi" data-en="Team Management">Ekip Yönetimi</h3>
+          <p data-tr="Çalışanlarını davet et, yetki ver, kimin ne yaptığını gör." data-en="Invite your staff, assign permissions, see who did what.">Çalışanlarını davet et, yetki ver, kimin ne yaptığını gör.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NASIL ÇALIŞIR -->
+  <section class="section how-it-works" id="nasil-calisir">
+    <div class="container">
+      <h2 class="section-title" data-tr="Nasıl Çalışır?" data-en="How Does It Work?">Nasıl Çalışır?</h2>
+      <div class="steps-row">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 data-tr="Kaydol" data-en="Sign Up">Kaydol</h3>
+          <p data-tr="Şirketini oluştur, ekibini davet et. 2 dakika." data-en="Create your company, invite your team. 2 minutes.">Şirketini oluştur, ekibini davet et. 2 dakika.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 data-tr="Ekipmanlarını Ekle" data-en="Add Your Equipment">Ekipmanlarını Ekle</h3>
+          <p data-tr="Fotoğraf, adet, depo bilgisi. Tek seferlik kurulum." data-en="Photo, quantity, warehouse info. One-time setup.">Fotoğraf, adet, depo bilgisi. Tek seferlik kurulum.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 data-tr="Takip Et" data-en="Track">Takip Et</h3>
+          <p data-tr="Etkinlik oluştur, eşya çıkar, iade al. Sistem gerisini halleder." data-en="Create an event, check out items, accept returns. The system handles the rest.">Etkinlik oluştur, eşya çıkar, iade al. Sistem gerisini halleder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="section bottom-cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2 data-tr="Bir sonraki etkinlikte hiçbir şey kaybolmasın." data-en="Let nothing get lost at your next event.">
+          Bir sonraki etkinlikte hiçbir şey kaybolmasın.
+        </h2>
+        <a href="https://stock-mind-lyart.vercel.app/login" class="btn-gold btn-large" data-tr="Hemen Başla — Ücretsiz →" data-en="Start Now — Free →">
+          Hemen Başla — Ücretsiz →
+        </a>
+        <p class="cta-sub" data-tr="Kurulum yok. Kart bilgisi yok. Sadece kaydol." data-en="No setup. No card info. Just sign up.">
+          Kurulum yok. Kart bilgisi yok. Sadece kaydol.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="assets/stockmind-logo.svg" alt="StockMind Logo" class="logo-img" />
+          <span class="logo-text">Stock <span class="gold">Mind</span></span>
+          <span class="footer-copy" data-tr="© 2025 StockMind" data-en="© 2025 StockMind">© 2025 StockMind</span>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-tr="Gizlilik" data-en="Privacy">Gizlilik</a>
+          <span>·</span>
+          <a href="#" data-tr="İletişim" data-en="Contact">İletişim</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-tr="StockMind v1.0 · Web tabanlı · Tüm cihazlarda çalışır" data-en="StockMind v1.0 · Web-based · Works on all devices">
+          StockMind v1.0 · Web tabanlı · Tüm cihazlarda çalışır
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
