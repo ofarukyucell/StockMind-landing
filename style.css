@@ -631,6 +631,8 @@ img { max-width: 100%; display: block; }
   .hero-right { order: -1; }
   .hero-image-wrapper { max-width: 320px; margin: 0 auto; }
   .hero-glow { display: none; }
+  .hero-cube { display: none; }
+  .hero-robot { width: 380px; }
 
   .cards-row { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
@@ -656,4 +658,27 @@ img { max-width: 100%; display: block; }
 
   .section { padding: 72px 0; }
   .section-title { margin-bottom: 36px; }
+
+  .hero { min-height: auto; }
+  .hero-inner {
+    padding: 48px 24px 300px;
+    text-align: center;
+  }
+  .hero-right { display: none; }
+  .hero-robot {
+    width: 280px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+  }
+
+  .lamp-wrapper { height: 60px; }
+  .lamp-svg {
+    top: -40px;
+    width: 200px;
+    height: 360px;
+    margin-left: -100px;
+  }
+
+  .cta-box { padding: 40px 20px; }
 }
