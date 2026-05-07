@@ -1,0 +1,17 @@
+# StockMind
+
+StockMind, etkinlik şirketleri için geliştirilmiş bir ekipman ve stok yönetimi SaaS platformudur.
+
+## Ne yapar?
+- Etkinlik ekipmanlarını gerçek zamanlı takip eder
+- Depolar arası stok hareketlerini kaydeder
+- Etkinlik bazlı ekipman çıkış/iade takibi yapar
+- Hasar ve tamir süreçlerini yönetir
+- Ekip davet ve yetki yönetimi sağlar
+
+## Kimler kullanır?
+Etkinlik organizasyon şirketleri, sahne ekipmanı kiralama firmaları, fuar organizatörleri.
+
+## Uygulama
+- Web: https://app.stockmind.com.tr
+- Landing: https://stockmind.com.tr
