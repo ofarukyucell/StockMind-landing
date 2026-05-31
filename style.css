@@ -543,6 +543,104 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
+/* ===== FİYATLANDIRMA ===== */
+.pricing { background: var(--bg-2); }
+
+.pricing-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.pricing-card:hover {
+  border-color: rgba(232, 168, 51, 0.25);
+  transform: translateY(-4px);
+}
+
+.pricing-card--highlight {
+  border-color: rgba(232, 168, 51, 0.35);
+  background: linear-gradient(160deg, #1e1c17 0%, #131210 100%);
+}
+
+.pricing-badge {
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  align-self: flex-start;
+}
+
+.pricing-badge--gold {
+  color: var(--gold);
+  background: var(--gold-dim);
+  border-color: rgba(232, 168, 51, 0.25);
+}
+
+.pricing-price {
+  font-family: var(--font-head);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.pricing-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.pricing-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.pricing-features li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+.pricing-btn {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .pricing-row { grid-template-columns: 1fr; }
+}
+
 /* ===== BOTTOM CTA ===== */
 .bottom-cta { background: var(--bg); }
 
